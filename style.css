@@ -1,11 +1,120 @@
-    body{
-     margin: 0;
-     border: 10px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: absolute;
-     top: 100px;
-     left: 850px;
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7c5aa; /* Marrom escuro */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
 
-    }
+h1, h2 {
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #8f785a; /* Marrom claro */
+}
+
+h2 {
+    color: #000000; /* Dourado */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100vw; 
+    height: 100vw;
+    max-width: 100%; 
+    max-height: 100vh; 
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+form, table {
+    width: 80%; /* Preenche boa parte da largura */
+    max-width: 900px; /* Limite para telas maiores */
+    background-color: #7a6447; /* Marrom claro */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #4B3621; /* Texto marrom escuro */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+form input[type="submit"] {
+    background: #a48c6e; /* Marrom escuro */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+form input[type="submit"]:hover {
+    background: #3C2F1A; /* Marrom mais escuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #000000; /* Preto */
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #333333;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+table th {
+    background-color: #000000; /* Preto */
+    color: #a48c6e;
+    text-transform: uppercase;
+}
+
+table td {
+    background-color: #D3D3D3; /* Cinza claro */
+    color: black;
+}
+
+table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+}
+
+table td a {
+    color: #007BFF; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    color: #0056b3; /* Azul mais escuro */
+    text-decoration: underline;
+}
